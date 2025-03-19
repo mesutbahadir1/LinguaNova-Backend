@@ -2838,19 +2838,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/mesut/.nuget/packages/": {}
+    "/Users/abozen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+      "projectUniqueName": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
       "projectName": "LinguaNovaBackend",
-      "projectPath": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
-      "packagesPath": "/Users/mesut/.nuget/packages/",
-      "outputPath": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/obj/",
+      "projectPath": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+      "packagesPath": "/Users/abozen/.nuget/packages/",
+      "outputPath": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mesut/.nuget/NuGet/NuGet.Config"
+        "/Users/abozen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2868,13 +2868,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2924,7 +2918,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/mesut/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

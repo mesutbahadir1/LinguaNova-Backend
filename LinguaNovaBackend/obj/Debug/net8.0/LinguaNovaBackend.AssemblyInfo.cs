@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinguaNovaBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5bc9b5bf2bd0d2d555ec48f9c0b2f6f83463ead")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinguaNovaBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinguaNovaBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
