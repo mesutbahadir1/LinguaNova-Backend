@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LinguaNovaBackend.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250319102719_initialCreate")]
+    [Migration("20250319141508_initialCreate")]
     partial class initialCreate
     {
         /// <inheritdoc />
