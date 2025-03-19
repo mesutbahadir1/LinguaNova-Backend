@@ -1,0 +1,6 @@
+@LinguaNovaBackend_HostAddress = http://localhost:5204
+
+GET {{LinguaNovaBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
