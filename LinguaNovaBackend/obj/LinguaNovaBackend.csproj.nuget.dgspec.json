@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/abozen/RiderProjects/LinguaNovaBackend/LinguaNovaBackend/LinguaNovaBackend.csproj": {}
+    "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj": {}
   },
   "projects": {
-    "/Users/abozen/RiderProjects/LinguaNovaBackend/LinguaNovaBackend/LinguaNovaBackend.csproj": {
+    "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/abozen/RiderProjects/LinguaNovaBackend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+        "projectUniqueName": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
         "projectName": "LinguaNovaBackend",
-        "projectPath": "/Users/abozen/RiderProjects/LinguaNovaBackend/LinguaNovaBackend/LinguaNovaBackend.csproj",
-        "packagesPath": "/Users/abozen/.nuget/packages/",
-        "outputPath": "/Users/abozen/RiderProjects/LinguaNovaBackend/LinguaNovaBackend/obj/",
+        "projectPath": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+        "packagesPath": "/Users/mesut/.nuget/packages/",
+        "outputPath": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/abozen/.nuget/NuGet/NuGet.Config"
+          "/Users/mesut/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,7 +32,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -82,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/mesut/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
