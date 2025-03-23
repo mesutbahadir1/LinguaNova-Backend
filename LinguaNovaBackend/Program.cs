@@ -1,35 +1,25 @@
-using LinguaNovaBackend.Models;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using LinguaNova.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
-builder.Services.AddCors(options =>
+// Add Swagger configuration
+builder.Services.AddSwaggerGen(c =>
 {
-    options.AddPolicy("AllowReactApp", policy =>
-    {
-        policy.AllowAnyOrigin()
-            .AllowAnyHeader()
-            .AllowAnyMethod();
-    });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Language Learning API", Version = "v1" });
 });
 
+// Add services
+builder.Services.AddScoped<GeminiService>();
 
-
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+// Add HttpClient
+builder.Services.AddHttpClient<GeminiService>();
 
 var app = builder.Build();
-
-// CORS'u middleware'e ekle
-app.UseCors("AllowReactApp");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -38,10 +28,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Comment out or remove these lines if you don't want to use authentication at all
+// app.UseAuthentication();
+// app.UseAuthorization();
+
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

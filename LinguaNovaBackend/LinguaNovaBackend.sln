@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinguaNovaBackend", "LinguaNovaBackend.csproj", "{8625D205-A10C-2EC3-0541-59B2D4AC9DCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8625D205-A10C-2EC3-0541-59B2D4AC9DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8625D205-A10C-2EC3-0541-59B2D4AC9DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8625D205-A10C-2EC3-0541-59B2D4AC9DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8625D205-A10C-2EC3-0541-59B2D4AC9DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0441EF1-CE4C-41FB-A368-CA3E0C86187B}
+	EndGlobalSection
+EndGlobal
