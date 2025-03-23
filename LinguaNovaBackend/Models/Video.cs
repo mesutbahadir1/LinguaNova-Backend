@@ -1,11 +1,14 @@
-public class Video
-{
-    public int Id { get; set; }
-    public string Title { get; set; }
-    public string Url { get; set; }
-    public int Level { get; set; }
+using System.Collections.Generic;
 
-    // Navigation properties
-    public ICollection<VideoTest> Tests { get; set; }
-    public ICollection<UserVideoProgress> UserProgresses { get; set; }
+namespace LinguaNovaBackend.Models
+{
+    public class Video
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public string Url { get; set; }
+        public int Level { get; set; }
+        public bool IsCompleted { get; set; }
+        public virtual ICollection<VideoTest> VideoTests { get; set; }
+    }
 } 

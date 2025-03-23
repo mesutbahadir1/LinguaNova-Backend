@@ -1,5 +1,7 @@
 using Microsoft.OpenApi.Models;
 using LinguaNova.Services;
+using Microsoft.EntityFrameworkCore;
+using LinguaNovaBackend.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,10 @@ builder.Services.AddScoped<GeminiService>();
 
 // Add HttpClient
 builder.Services.AddHttpClient<GeminiService>();
+
+// Add DbContext configuration
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

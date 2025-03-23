@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
 using LinguaNova.Services;
-using LinguaNova.DTOs;
 
 namespace LinguaNova.Controllers
 {
@@ -16,24 +15,58 @@ namespace LinguaNova.Controllers
         }
 
         [HttpPost("chat")]
-        public async Task<ActionResult<ChatResponse>> Chat([FromBody] ChatRequest request)
+        public async Task<IActionResult> Chat([FromBody] string message)
         {
             try
             {
-                var response = await _geminiService.GetLanguageLearningResponse(
-                    request.Message,
-                    request.TargetLanguage
-                );
-
-                return Ok(new ChatResponse
-                {
-                    Message = response,
-                    Timestamp = DateTime.UtcNow
-                });
+                var response = await _geminiService.GetChatbotResponse(message);
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { error = "An error occurred while processing your request." });
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpPost("grammar")]
+        public async Task<IActionResult> CheckGrammar([FromBody] string text)
+        {
+            try
+            {
+                var response = await _geminiService.GetGrammarCorrection(text);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpPost("vocabulary")]
+        public async Task<IActionResult> ExplainVocabulary([FromBody] string word)
+        {
+            try
+            {
+                var response = await _geminiService.GetVocabularyExplanation(word);
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("models")]
+        public async Task<IActionResult> ListModels()
+        {
+            try
+            {
+                var response = await _geminiService.ListAvailableModels();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
             }
         }
     }

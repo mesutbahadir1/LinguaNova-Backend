@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UPvww50xWV8=",
+  "dgSpecHash": "huzrwKpgaO95CiDoeddstRve4Cp6Tk57FVpLRQEAytWo7waYqHaqOAKLPLg4hwAci3oFTUxtctxteH1Af/O/WA==",
   "success": true,
-  "projectFilePath": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+  "projectFilePath": "/Users/abozen/Desktop/linguaNova-backend-cursor/LinguaNovaBackend/LinguaNovaBackend.csproj",
   "expectedPackageFiles": [
     "/Users/abozen/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/abozen/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

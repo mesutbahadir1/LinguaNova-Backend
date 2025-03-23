@@ -6929,11 +6929,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+      "projectUniqueName": "/Users/abozen/Desktop/linguaNova-backend-cursor/LinguaNovaBackend/LinguaNovaBackend.csproj",
       "projectName": "LinguaNovaBackend",
-      "projectPath": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/LinguaNovaBackend.csproj",
+      "projectPath": "/Users/abozen/Desktop/linguaNova-backend-cursor/LinguaNovaBackend/LinguaNovaBackend.csproj",
       "packagesPath": "/Users/abozen/.nuget/packages/",
-      "outputPath": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/obj/",
+      "outputPath": "/Users/abozen/Desktop/linguaNova-backend-cursor/LinguaNovaBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/abozen/.nuget/NuGet/NuGet.Config"
