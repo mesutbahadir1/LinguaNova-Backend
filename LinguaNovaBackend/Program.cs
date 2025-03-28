@@ -6,6 +6,15 @@ using LinguaNovaBackend.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5040);
+    options.ListenAnyIP(5041, listenOptions =>
+    {
+        listenOptions.UseHttps();
+    } );
+});
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -13,6 +22,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Language Learning API", Version = "v1" });
+});
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+        });
 });
 
 // Add services
@@ -37,7 +57,7 @@ if (app.Environment.IsDevelopment())
 // Comment out or remove these lines if you don't want to use authentication at all
 // app.UseAuthentication();
 // app.UseAuthorization();
-
+app.UseCors("AllowAll");
 app.UseHttpsRedirection();
 app.MapControllers();
 

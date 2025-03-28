@@ -8,7 +8,5 @@ namespace LinguaNovaBackend.Models
         public string Title { get; set; }
         public string Content { get; set; }
         public int Level { get; set; }
-        public bool IsCompleted { get; set; }
-        public virtual ICollection<ArticleTest> ArticleTests { get; set; }
     }
 } 

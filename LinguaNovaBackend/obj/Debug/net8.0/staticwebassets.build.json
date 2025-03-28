@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "TfYjBUrvEi86kRv/FXKoifuYmIn3y2PihAs7nEuApEo=",
+  "Hash": "eN+zOiGMHRQwBRBnBKZ++ocRzIx/xZHLHBBiU8tIGyI=",
   "Source": "LinguaNovaBackend",
   "BasePath": "_content/LinguaNovaBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

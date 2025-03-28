@@ -7,8 +7,7 @@ namespace LinguaNovaBackend.Models
         public int Id { get; set; }
         public string Username { get; set; }
         public string Email { get; set; }
-        public int Level { get; set; }
-        public int TotalScore { get; set; }
-        public virtual ICollection<UserTestProgress> TestProgress { get; set; }
+        public string Password { get; set; }
+        public int Level { get; set; } = 1;
     }
 } 

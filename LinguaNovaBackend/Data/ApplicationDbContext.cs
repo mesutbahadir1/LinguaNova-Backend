@@ -18,52 +18,46 @@ namespace LinguaNovaBackend.Data
         public DbSet<VideoTest> VideoTests { get; set; }
         public DbSet<AudioTest> AudioTests { get; set; }
         public DbSet<UserTestProgress> UserTestProgresses { get; set; }
+        public DbSet<UserArticleProgress> UserArticleProgresses { get; set; }
+        public DbSet<UserAudioProgress> UserAudioProgresses { get; set; }
+        public DbSet<UserVideoProgress> UserVideoProgresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Article - ArticleTest relationship
-            modelBuilder.Entity<ArticleTest>()
-                .HasOne(at => at.Article)
-                .WithMany(a => a.ArticleTests)
-                .HasForeignKey(at => at.ArticleId);
+            // User - UserArticleProgress relationship
+            modelBuilder.Entity<UserArticleProgress>()
+                .HasOne(uap => uap.User)
+                .WithMany()
+                .HasForeignKey(uap => uap.UserId);
 
-            // Video - VideoTest relationship
-            modelBuilder.Entity<VideoTest>()
-                .HasOne(vt => vt.Video)
-                .WithMany(v => v.VideoTests)
-                .HasForeignKey(vt => vt.VideoId);
+            modelBuilder.Entity<UserArticleProgress>()
+                .HasOne(uap => uap.Article)
+                .WithMany()
+                .HasForeignKey(uap => uap.ArticleId);
 
-            // Audio - AudioTest relationship
-            modelBuilder.Entity<AudioTest>()
-                .HasOne(at => at.Audio)
-                .WithMany(a => a.AudioTests)
-                .HasForeignKey(at => at.AudioId);
+            // User - UserAudioProgress relationship
+            modelBuilder.Entity<UserAudioProgress>()
+                .HasOne(uap => uap.User)
+                .WithMany()
+                .HasForeignKey(uap => uap.UserId);
 
-            // User - UserTestProgress relationship
-            modelBuilder.Entity<UserTestProgress>()
-                .HasOne(utp => utp.User)
-                .WithMany(u => u.TestProgress)
-                .HasForeignKey(utp => utp.UserId);
+            modelBuilder.Entity<UserAudioProgress>()
+                .HasOne(uap => uap.Audio)
+                .WithMany()
+                .HasForeignKey(uap => uap.AudioId);
 
-            // UserTestProgress - ArticleTest relationship
-            modelBuilder.Entity<UserTestProgress>()
-                .HasOne(utp => utp.ArticleTest)
-                .WithMany(at => at.UserTestProgresses)
-                .HasForeignKey(utp => utp.ArticleTestId);
+            // User - UserVideoProgress relationship
+            modelBuilder.Entity<UserVideoProgress>()
+                .HasOne(uvp => uvp.User)
+                .WithMany()
+                .HasForeignKey(uvp => uvp.UserId);
 
-            // UserTestProgress - VideoTest relationship
-            modelBuilder.Entity<UserTestProgress>()
-                .HasOne(utp => utp.VideoTest)
-                .WithMany(vt => vt.UserTestProgresses)
-                .HasForeignKey(utp => utp.VideoTestId);
-
-            // UserTestProgress - AudioTest relationship
-            modelBuilder.Entity<UserTestProgress>()
-                .HasOne(utp => utp.AudioTest)
-                .WithMany(at => at.UserTestProgresses)
-                .HasForeignKey(utp => utp.AudioTestId);
+            modelBuilder.Entity<UserVideoProgress>()
+                .HasOne(uvp => uvp.Video)
+                .WithMany()
+                .HasForeignKey(uvp => uvp.VideoId);
         }
     }
-} 
+}
