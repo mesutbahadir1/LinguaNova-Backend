@@ -125,5 +125,44 @@ namespace LinguaNovaBackend.Controllers
 
             return NoContent();
         }
+        
+        // GET: api/UserVideoProgress/GetVideosByUserAndLevel?userId=1&level=2
+        [HttpGet("GetVideosByUserAndLevel")]
+        public async Task<ActionResult<IEnumerable<VideoProgressDto>>> GetVideosByUserAndLevel(int userId, int level)
+        {
+            // Kullanıcının belirtilen seviyedeki video ilerlemelerini çek
+            var userVideoProgressList = await _context.UserVideoProgresses
+                .Where(uvp => uvp.UserId == userId && uvp.Level == level)
+                .ToListAsync();
+
+            if (!userVideoProgressList.Any())
+            {
+                return NotFound("Belirtilen kullanıcı ve seviyeye ait video bulunamadı.");
+            }
+
+            // İlgili Video ID'lerini al
+            var videoIds = userVideoProgressList.Select(uvp => uvp.VideoId).ToList();
+
+            // Video tablosundan ilgili videoları çek
+            var videos = await _context.Videos
+                .Where(v => videoIds.Contains(v.Id))
+                .ToListAsync();
+
+            // DTO listesine dönüştür
+            var result = userVideoProgressList.Select(uvp =>
+            {
+                var video = videos.FirstOrDefault(v => v.Id == uvp.VideoId);
+                return new VideoProgressDto
+                {
+                    Id = video.Id,
+                    Title = video.Title,
+                    Url = video.Url,
+                    IsCompleted = uvp.IsCompleted
+                };
+            }).ToList();
+
+            return Ok(result);
+        }
+
     }
 }

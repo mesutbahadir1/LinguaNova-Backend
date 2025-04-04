@@ -124,5 +124,43 @@ namespace LinguaNovaBackend.Controllers
 
             return NoContent();
         }
+        // GET: api/UserAudioProgress/GetAudiosByUserAndLevel?userId=1&level=2
+        [HttpGet("GetAudiosByUserAndLevel")]
+        public async Task<ActionResult<IEnumerable<AudioProgressDto>>> GetAudiosByUserAndLevel(int userId, int level)
+        {
+            // Kullanıcının belirtilen seviyedeki audio ilerlemelerini çek
+            var userAudioProgressList = await _context.UserAudioProgresses
+                .Where(uap => uap.UserId == userId && uap.Level == level)
+                .ToListAsync();
+
+            if (!userAudioProgressList.Any())
+            {
+                return NotFound("Belirtilen kullanıcı ve seviyeye ait audio bulunamadı.");
+            }
+
+            // İlgili Audio ID'lerini al
+            var audioIds = userAudioProgressList.Select(uap => uap.AudioId).ToList();
+
+            // Audio tablosundan ilgili audio içeriklerini çek
+            var audios = await _context.Audios
+                .Where(a => audioIds.Contains(a.Id))
+                .ToListAsync();
+
+            // DTO listesine dönüştür
+            var result = userAudioProgressList.Select(uap =>
+            {
+                var audio = audios.FirstOrDefault(a => a.Id == uap.AudioId);
+                return new AudioProgressDto
+                {
+                    Id = audio.Id,
+                    Title = audio.Title,
+                    Url = audio.Url,
+                    IsCompleted = uap.IsCompleted
+                };
+            }).ToList();
+
+            return Ok(result);
+        }
+
     }
 }

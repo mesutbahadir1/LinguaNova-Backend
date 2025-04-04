@@ -123,5 +123,40 @@ namespace LinguaNovaBackend.Controllers
 
             return NoContent();
         }
+        
+        [HttpGet("GetArticlesByUserAndLevel")]
+        public async Task<ActionResult<IEnumerable<ArticleProgressDto>>> GetArticlesByUserAndLevel(int userId, int level)
+        {
+            // Kullanıcının belirtilen seviyeye ait ilerlemelerini çek
+            var userArticleProgressList = await _context.UserArticleProgresses
+                .Where(uap => uap.UserId == userId && uap.Level == level)
+                .Include(uap => uap.Article) // Article bilgilerini al
+                .ToListAsync();
+
+            if (!userArticleProgressList.Any())
+            {
+                return NotFound("Belirtilen kullanıcı ve seviyeye ait makale bulunamadı.");
+            }
+
+            // İlgili Article ID'leri al
+            var articleIds = userArticleProgressList.Select(uap => uap.ArticleId).ToList();
+
+            // Article tablosundan ilgili makaleleri çek
+            var articles = await _context.Articles
+                .Where(a => articleIds.Contains(a.Id))
+                .ToListAsync();
+
+            // Sonuçları DTO formatına çevir
+            var result = userArticleProgressList.Select(uap => new ArticleProgressDto
+            {
+                Id = uap.Article.Id,
+                Title = uap.Article.Title,
+                Content = uap.Article.Content,
+                IsCompleted = uap.IsCompleted
+            }).ToList();
+
+            return Ok(result);
+        }
+
     }
 }
