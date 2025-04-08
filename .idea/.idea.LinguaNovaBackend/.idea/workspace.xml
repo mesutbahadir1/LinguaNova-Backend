@@ -9,16 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5f2c963-7227-424f-85dc-04d4f475adf4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/LinguaNovaBackend.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/LinguaNovaBackend.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/LinguaNovaBackend.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/LinguaNovaBackend.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LinguaNovaBackend/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/LinguaNovaBackend/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -51,25 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "cursor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.LinguaNovaBackend: http">
     <configuration name="LinguaNovaBackend: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/LinguaNovaBackend/LinguaNovaBackend.csproj" />
@@ -112,6 +105,7 @@
       <updated>1742393078195</updated>
       <workItem from="1742393078967" duration="683000" />
       <workItem from="1742393839125" duration="24000" />
+      <workItem from="1744117720449" duration="117000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <option name="closed" value="true" />

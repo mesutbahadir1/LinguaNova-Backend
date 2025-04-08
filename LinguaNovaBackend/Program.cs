@@ -59,7 +59,7 @@ if (app.Environment.IsDevelopment())
 // app.UseAuthorization();
 app.UseCors("AllowAll");
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.MapControllers();
 
 app.Run();

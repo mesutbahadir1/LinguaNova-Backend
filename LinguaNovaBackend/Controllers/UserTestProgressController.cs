@@ -174,6 +174,7 @@ namespace LinguaNovaBackend.Controllers
             }
         }
         
+        [HttpPut("UpdateLevelIfAllCompleted/{userId}")]
         public async Task UpdateLevelIfAllCompleted(int userId)
         {
             // Kullanıcının mevcut seviyesini al
