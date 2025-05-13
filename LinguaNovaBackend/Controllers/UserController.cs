@@ -346,7 +346,29 @@ public async Task<ActionResult<string>> GetUserName(int id)
     // Sadece string değeri döndür, JSON formatında değil
     return user.Username;
 }
+
+[HttpGet("user/{id}")]
+public async Task<IActionResult> GetUserById(int id)
+{
+    var user = await _context.Users
+        .Where(u => u.Id == id)
+        .Select(u => new
+        {
+            FullName = u.Username,
+            Email = u.Email,
+            Level = u.Level
+        })
+        .FirstOrDefaultAsync();
+
+    if (user == null)
+    {
+        return NotFound();
     }
+
+    return Ok(user);
+}
+    }
+    
     
     
 }
