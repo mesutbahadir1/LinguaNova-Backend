@@ -9,10 +9,12 @@ using LinguaNovaBackend.Dtos;
 
 namespace LinguaNovaBackend.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class UserTestProgressController : ControllerBase
     {
+        const double threshold = 1;
         private readonly ApplicationDbContext _context;
 
         public UserTestProgressController(ApplicationDbContext context)
@@ -113,7 +115,7 @@ namespace LinguaNovaBackend.Controllers
                 await CheckAndUpdateAudioCompletion(existingProgress.AudioId.Value, existingProgress.UserId);
             }
             
-            await UpdateLevelIfAllCompleted(existingProgress.UserId);
+            //await UpdateLevelIfAllCompleted(existingProgress.UserId);
             return NoContent();
         }
         
@@ -123,67 +125,94 @@ namespace LinguaNovaBackend.Controllers
                 .Where(utp => utp.ArticleId == articleId && utp.UserId == userId)
                 .ToListAsync();
 
-            bool allTestsCorrect = userTestsForArticle.All(utp => utp.IsCorrect);
+            if (!userTestsForArticle.Any())
+                return;
 
-            var userArticleProgress = await _context.UserArticleProgresses
-                .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.ArticleId == articleId);
+            int totalTests = userTestsForArticle.Count;
+            int correctTests = userTestsForArticle.Count(utp => utp.IsCorrect);
+            double correctRatio = (double)correctTests / totalTests;
 
-            if (userArticleProgress != null && allTestsCorrect)
+ 
+            if (correctRatio >= threshold)
             {
-                userArticleProgress.IsCompleted = true;
-                _context.Entry(userArticleProgress).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
+                var userArticleProgress = await _context.UserArticleProgresses
+                    .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.ArticleId == articleId);
+
+                if (userArticleProgress != null)
+                {
+                    userArticleProgress.IsCompleted = true;
+                    _context.Entry(userArticleProgress).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                }
             }
         }
-
         private async Task CheckAndUpdateVideoCompletion(int videoId, int userId)
         {
             var userTestsForVideo = await _context.UserTestProgresses
                 .Where(utp => utp.VideoId == videoId && utp.UserId == userId)
                 .ToListAsync();
 
-            bool allTestsCorrect = userTestsForVideo.All(utp => utp.IsCorrect);
+            if (!userTestsForVideo.Any())
+                return;
 
-            var userVideoProgress = await _context.UserVideoProgresses
-                .FirstOrDefaultAsync(uvp => uvp.UserId == userId && uvp.VideoId == videoId);
+            int totalTests = userTestsForVideo.Count;
+            int correctTests = userTestsForVideo.Count(utp => utp.IsCorrect);
+            double correctRatio = (double)correctTests / totalTests;
 
-            if (userVideoProgress != null && allTestsCorrect)
+
+
+            if (correctRatio >= threshold)
             {
-                userVideoProgress.IsCompleted = true;
-                _context.Entry(userVideoProgress).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
+                var userVideoProgress = await _context.UserVideoProgresses
+                    .FirstOrDefaultAsync(uvp => uvp.UserId == userId && uvp.VideoId == videoId);
+
+                if (userVideoProgress != null)
+                {
+                    userVideoProgress.IsCompleted = true;
+                    _context.Entry(userVideoProgress).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                }
             }
         }
-
         private async Task CheckAndUpdateAudioCompletion(int audioId, int userId)
         {
             var userTestsForAudio = await _context.UserTestProgresses
                 .Where(utp => utp.AudioId == audioId && utp.UserId == userId)
                 .ToListAsync();
 
-            bool allTestsCorrect = userTestsForAudio.All(utp => utp.IsCorrect);
+            if (!userTestsForAudio.Any())
+                return;
 
-            var userAudioProgress = await _context.UserAudioProgresses
-                .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.AudioId == audioId);
+            int totalTests = userTestsForAudio.Count;
+            int correctTests = userTestsForAudio.Count(utp => utp.IsCorrect);
+            double correctRatio = (double)correctTests / totalTests;
 
-            if (userAudioProgress != null && allTestsCorrect)
+
+
+            if (correctRatio >= threshold)
             {
-                userAudioProgress.IsCompleted = true;
-                _context.Entry(userAudioProgress).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
+                var userAudioProgress = await _context.UserAudioProgresses
+                    .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.AudioId == audioId);
+
+                if (userAudioProgress != null)
+                {
+                    userAudioProgress.IsCompleted = true;
+                    _context.Entry(userAudioProgress).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
+                }
             }
         }
-        
+                
         [HttpPut("UpdateLevelIfAllCompleted/{userId}")]
-        public async Task UpdateLevelIfAllCompleted(int userId)
+        private async Task<(bool LevelUp, int? NewLevel)> UpdateLevelIfAllCompleted(int userId)
         {
             // Kullanıcının mevcut seviyesini al
             var user = await _context.Users
                 .Where(u => u.Id == userId)
                 .FirstOrDefaultAsync();
-        
+
             if (user == null)
-                return;
+                return (false, null);
 
             var currentLevel = user.Level;
 
@@ -202,18 +231,22 @@ namespace LinguaNovaBackend.Controllers
                 .Where(a => a.Level == currentLevel)
                 .ToListAsync();
 
+            // Eğer hiç içerik yoksa false döndür
+            if (!articles.Any() && !videos.Any() && !audios.Any())
+                return (false, null);
+
             // Makale testlerinin tamamlanma durumu
-            bool allArticlesCompleted = await _context.UserArticleProgresses
+            bool allArticlesCompleted = !articles.Any() || await _context.UserArticleProgresses
                 .Where(up => up.UserId == userId && articles.Select(a => a.Id).Contains(up.ArticleId))
                 .AllAsync(up => up.IsCompleted);
 
             // Video testlerinin tamamlanma durumu
-            bool allVideosCompleted = await _context.UserVideoProgresses
+            bool allVideosCompleted = !videos.Any() || await _context.UserVideoProgresses
                 .Where(up => up.UserId == userId && videos.Select(v => v.Id).Contains(up.VideoId))
                 .AllAsync(up => up.IsCompleted);
 
             // Ses testlerinin tamamlanma durumu
-            bool allAudiosCompleted = await _context.UserAudioProgresses
+            bool allAudiosCompleted = !audios.Any() || await _context.UserAudioProgresses
                 .Where(up => up.UserId == userId && audios.Select(a => a.Id).Contains(up.AudioId))
                 .AllAsync(up => up.IsCompleted);
 
@@ -223,7 +256,10 @@ namespace LinguaNovaBackend.Controllers
                 user.Level += 1; // Seviyeyi artır
                 _context.Users.Update(user);
                 await _context.SaveChangesAsync();
+                return (true, user.Level);
             }
+
+            return (false, user.Level);
         }
 
         // DELETE: api/UserTestProgress/5

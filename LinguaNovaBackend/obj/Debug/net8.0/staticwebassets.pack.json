@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
+      "PackagePath": "staticwebassets/audio/level1-audio1.mp3"
+    },
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
+      "PackagePath": "staticwebassets/audio/level1-audio2.mp3"
+    },
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
+      "PackagePath": "staticwebassets/audio/level2-audio1.mp3"
+    },
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
+      "PackagePath": "staticwebassets/audio/level2-audio2.mp3"
+    },
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
+      "PackagePath": "staticwebassets/audio/level3-audio1.mp3"
+    },
+    {
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
+      "PackagePath": "staticwebassets/audio/level3-audio2.mp3"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.LinguaNovaBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.LinguaNovaBackend.props",
+      "PackagePath": "build\\LinguaNovaBackend.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.LinguaNovaBackend.props",
+      "PackagePath": "buildMultiTargeting\\LinguaNovaBackend.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.LinguaNovaBackend.props",
+      "PackagePath": "buildTransitive\\LinguaNovaBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
