@@ -100,6 +100,7 @@ namespace LinguaNovaBackend.Controllers
             existingProgress.IsCorrect = updateDto.IsCorrect;
             _context.Entry(existingProgress).State = EntityState.Modified;
             await _context.SaveChangesAsync();
+            Console.WriteLine($"[DEBUG] UserId: {existingProgress.UserId}, ArticleId: {existingProgress.ArticleId}, IsCorrect: {updateDto.IsCorrect}");
 
             // 'type' parametresine göre ilgili işlemi yap
             if (existingProgress.ArticleId.HasValue && type == 1)
@@ -131,9 +132,15 @@ namespace LinguaNovaBackend.Controllers
             int totalTests = userTestsForArticle.Count;
             int correctTests = userTestsForArticle.Count(utp => utp.IsCorrect);
             double correctRatio = (double)correctTests / totalTests;
+            
+            bool allTestsCorrect = userTestsForArticle.All(utp => utp.IsCorrect);
+            Console.WriteLine($"[DEBUG Article] alltestcorrect : {allTestsCorrect} + corret ratio: {correctRatio} usertests: {userTestsForArticle.Count}" );
+            foreach (var test in userTestsForArticle)
+            {
+                Console.WriteLine($"[DEBUG Article] TestId: {test.Id}, IsCorrect: {test.IsCorrect}, ArticleId: {test.ArticleId}, UserId: {test.UserId},");
+            }
 
- 
-            if (correctRatio >= threshold)
+            if (allTestsCorrect)
             {
                 var userArticleProgress = await _context.UserArticleProgresses
                     .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.ArticleId == articleId);
@@ -159,9 +166,10 @@ namespace LinguaNovaBackend.Controllers
             int correctTests = userTestsForVideo.Count(utp => utp.IsCorrect);
             double correctRatio = (double)correctTests / totalTests;
 
+            bool allTestsCorrect = userTestsForVideo.All(utp => utp.IsCorrect);
+            Console.WriteLine($"[DEBUG Video] alltestcorrect : {allTestsCorrect} + corret ratio: {correctRatio} " );
 
-
-            if (correctRatio >= threshold)
+            if (allTestsCorrect)
             {
                 var userVideoProgress = await _context.UserVideoProgresses
                     .FirstOrDefaultAsync(uvp => uvp.UserId == userId && uvp.VideoId == videoId);
@@ -187,9 +195,10 @@ namespace LinguaNovaBackend.Controllers
             int correctTests = userTestsForAudio.Count(utp => utp.IsCorrect);
             double correctRatio = (double)correctTests / totalTests;
 
+            bool allTestsCorrect = userTestsForAudio.All(utp => utp.IsCorrect);
+            Console.WriteLine($"[DEBUG Audio] alltestcorrect : {allTestsCorrect} + corret ratio: {correctRatio} " );
 
-
-            if (correctRatio >= threshold)
+            if (allTestsCorrect)
             {
                 var userAudioProgress = await _context.UserAudioProgresses
                     .FirstOrDefaultAsync(uap => uap.UserId == userId && uap.AudioId == audioId);
