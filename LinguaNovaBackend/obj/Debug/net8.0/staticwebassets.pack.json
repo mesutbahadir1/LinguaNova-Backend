@@ -1,32 +1,28 @@
 {
   "Files": [
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
       "PackagePath": "staticwebassets/audio/level1-audio1.mp3"
     },
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
       "PackagePath": "staticwebassets/audio/level1-audio2.mp3"
     },
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
       "PackagePath": "staticwebassets/audio/level2-audio1.mp3"
     },
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
       "PackagePath": "staticwebassets/audio/level2-audio2.mp3"
     },
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
       "PackagePath": "staticwebassets/audio/level3-audio1.mp3"
     },
     {
-      "Id": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
+      "Id": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
       "PackagePath": "staticwebassets/audio/level3-audio2.mp3"
-    },
-    {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.LinguaNovaBackend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.LinguaNovaBackend.Microsoft.AspNetCore.StaticWebAssets.props",
