@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GkweVrxlGWxyIFn+6sCFpBsFa/1pitq06VTrluvEDWs=",
+  "Hash": "HDM3NiwKfxOJNmX57xlMh4EQ3tW6jgm/w48u61Y2lps=",
   "Source": "LinguaNovaBackend",
   "BasePath": "_content/LinguaNovaBackend",
   "Mode": "Default",
@@ -10,125 +10,631 @@
     {
       "Name": "LinguaNovaBackend/wwwroot",
       "Source": "LinguaNovaBackend",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level1-audio1.mp3",
+      "RelativePath": "audio/level1-audio1#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "my5q4h3lqh",
+      "Integrity": "rni0fXqBXqQS6LKcDec4PgeyFEUreUquJbCzfHxbdFA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level1-audio1.mp3"
     },
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level1-audio2.mp3",
+      "RelativePath": "audio/level1-audio2#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "p4t2v92zr1",
+      "Integrity": "B90j0fPtqbPp1vBq3jQCDzEExVw6arRxL+2VtpIEu5c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level1-audio2.mp3"
     },
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level2-audio1.mp3",
+      "RelativePath": "audio/level2-audio1#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "6gkiww9yg7",
+      "Integrity": "+hciEpCc1LrWES9r2xiZHEBV+SjGaCZFJBqG190FdBg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level2-audio1.mp3"
     },
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level2-audio2.mp3",
+      "RelativePath": "audio/level2-audio2#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9bpxzt2fok",
+      "Integrity": "m4oG6bPjzrLvp3L5gee51pVEggUWbyolj2YKXgw/7J8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level2-audio2.mp3"
     },
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level3-audio1.mp3",
+      "RelativePath": "audio/level3-audio1#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "2gv0cf6rvr",
+      "Integrity": "zhjG7SdOTM2pwuBYqLwYFH/YodyDhFq8KLLn83tDSDc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level3-audio1.mp3"
     },
     {
-      "Identity": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
+      "Identity": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
       "SourceId": "LinguaNovaBackend",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
+      "ContentRoot": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/",
       "BasePath": "_content/LinguaNovaBackend",
-      "RelativePath": "audio/level3-audio2.mp3",
+      "RelativePath": "audio/level3-audio2#[.{fingerprint}]?.mp3",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "a89b5o9kv8",
+      "Integrity": "ehgbhPdUTZh1Nm3hS37A8w95LYsqPpGAvlfLwcKWDcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/audio/level3-audio2.mp3"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "audio/level1-audio1.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5648299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rni0fXqBXqQS6LKcDec4PgeyFEUreUquJbCzfHxbdFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rni0fXqBXqQS6LKcDec4PgeyFEUreUquJbCzfHxbdFA="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level1-audio1.my5q4h3lqh.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5648299"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rni0fXqBXqQS6LKcDec4PgeyFEUreUquJbCzfHxbdFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "my5q4h3lqh"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level1-audio1.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rni0fXqBXqQS6LKcDec4PgeyFEUreUquJbCzfHxbdFA="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level1-audio2.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4801932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B90j0fPtqbPp1vBq3jQCDzEExVw6arRxL+2VtpIEu5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B90j0fPtqbPp1vBq3jQCDzEExVw6arRxL+2VtpIEu5c="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level1-audio2.p4t2v92zr1.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level1-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4801932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B90j0fPtqbPp1vBq3jQCDzEExVw6arRxL+2VtpIEu5c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p4t2v92zr1"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level1-audio2.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B90j0fPtqbPp1vBq3jQCDzEExVw6arRxL+2VtpIEu5c="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level2-audio1.6gkiww9yg7.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4769749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+hciEpCc1LrWES9r2xiZHEBV+SjGaCZFJBqG190FdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gkiww9yg7"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level2-audio1.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+hciEpCc1LrWES9r2xiZHEBV+SjGaCZFJBqG190FdBg="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level2-audio1.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4769749"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+hciEpCc1LrWES9r2xiZHEBV+SjGaCZFJBqG190FdBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+hciEpCc1LrWES9r2xiZHEBV+SjGaCZFJBqG190FdBg="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level2-audio2.9bpxzt2fok.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1033982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m4oG6bPjzrLvp3L5gee51pVEggUWbyolj2YKXgw/7J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9bpxzt2fok"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level2-audio2.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m4oG6bPjzrLvp3L5gee51pVEggUWbyolj2YKXgw/7J8="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level2-audio2.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level2-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1033982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m4oG6bPjzrLvp3L5gee51pVEggUWbyolj2YKXgw/7J8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m4oG6bPjzrLvp3L5gee51pVEggUWbyolj2YKXgw/7J8="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level3-audio1.2gv0cf6rvr.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zhjG7SdOTM2pwuBYqLwYFH/YodyDhFq8KLLn83tDSDc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2gv0cf6rvr"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level3-audio1.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zhjG7SdOTM2pwuBYqLwYFH/YodyDhFq8KLLn83tDSDc="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level3-audio1.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio1.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4426186"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zhjG7SdOTM2pwuBYqLwYFH/YodyDhFq8KLLn83tDSDc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zhjG7SdOTM2pwuBYqLwYFH/YodyDhFq8KLLn83tDSDc="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level3-audio2.a89b5o9kv8.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4230999"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ehgbhPdUTZh1Nm3hS37A8w95LYsqPpGAvlfLwcKWDcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a89b5o9kv8"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/level3-audio2.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehgbhPdUTZh1Nm3hS37A8w95LYsqPpGAvlfLwcKWDcA="
+        }
+      ]
+    },
+    {
+      "Route": "audio/level3-audio2.mp3",
+      "AssetFile": "/Users/mesut/LinguaNova-backend/LinguaNovaBackend/wwwroot/audio/level3-audio2.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4230999"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ehgbhPdUTZh1Nm3hS37A8w95LYsqPpGAvlfLwcKWDcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Jun 2025 17:51:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ehgbhPdUTZh1Nm3hS37A8w95LYsqPpGAvlfLwcKWDcA="
+        }
+      ]
     }
   ]
 }

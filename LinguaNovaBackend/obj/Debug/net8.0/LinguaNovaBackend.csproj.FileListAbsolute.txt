@@ -640,3 +640,4 @@
 /Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/obj/Debug/net8.0/LinguaNovaBackend.genruntimeconfig.cache
 /Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/obj/Debug/net8.0/ref/LinguaNovaBackend.dll
 /Users/abozen/Desktop/aburo/bitirme/LinguaNova-backend/LinguaNovaBackend/bin/Debug/net8.0/LinguaNovaBackend.staticwebassets.runtime.json
+/Users/mesut/LinguaNova-backend/LinguaNovaBackend/bin/Debug/net8.0/LinguaNovaBackend.staticwebassets.runtime.json

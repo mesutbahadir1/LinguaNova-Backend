@@ -116,8 +116,18 @@ namespace LinguaNovaBackend.Controllers
                 await CheckAndUpdateAudioCompletion(existingProgress.AudioId.Value, existingProgress.UserId);
             }
             
-            //await UpdateLevelIfAllCompleted(existingProgress.UserId);
-            return NoContent();
+            // Level kontrolü yap ve sonucu al
+            var (levelUp, newLevel) = await UpdateLevelIfAllCompleted(existingProgress.UserId);
+            
+            // Response DTO'sunu oluştur ve döndür
+            var response = new UpdateTestResponseDto
+            {
+                LevelUp = levelUp,
+                NewLevel = newLevel,
+                IsCorrect = updateDto.IsCorrect
+            };
+
+            return Ok(response);
         }
         
         private async Task CheckAndUpdateArticleCompletion(int articleId, int userId)
@@ -213,7 +223,7 @@ namespace LinguaNovaBackend.Controllers
         }
                 
         [HttpPut("UpdateLevelIfAllCompleted/{userId}")]
-        private async Task<(bool LevelUp, int? NewLevel)> UpdateLevelIfAllCompleted(int userId)
+         private async Task<(bool LevelUp, int? NewLevel)> UpdateLevelIfAllCompleted(int userId)
         {
             // Kullanıcının mevcut seviyesini al
             var user = await _context.Users
